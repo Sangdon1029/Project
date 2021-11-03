@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>파이널 코딩테스트</title>
+    <style>
+        address{
+            font-style: none;
+        }
+        * body{
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        a{
+            text-decoration: none;
+            text-decoration-color: black;
+        }
+        .page_wrab{
+            margin: 86px 430px 348px 430px;
+            background-color: #F2F2F2;
+            width: 1200px;
+            height: 1200px;
+            margin: 86px auto;
+           overflow: hidden;
+           border-radius: 20px;
+        }
+        header{
+            font-size: 24px;
+            margin-top: 41px;
+            padding-top:0;
+            text-align: center;
+        }
+        .hr1{
+            width: 61.3%;
+        }
+        nav{
+            text-align: center;
+            width: 100%;
+        }
+        nav .nav_item{
+            height:19px;
+            font-size: 16px;
+            display: inline-flex;
+            padding-right: 60px;
+        }
+        th{
+            display: none;
+        }
+        main{
+            background-color: white;
+            width: 1100px;
+            display: flex;
+            flex-wrap: wrap;
+            padding-bottom: 18px;
+            padding-top:12px;
+            padding-left:10px;
+            margin-left: 50px;
+            margin-top: 28px;
+            margin-bottom: 31px;
+            border-radius: 20px;
+            box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.2);
+        }
+        figure{
+            width: 220px;
+            height: 441px;
+            margin: 12px 23px;
+            background-color: white;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.2);
+        }
+        figure figcaption{
+            margin-bottom: 12px;
+            margin-left: 20px;
+            text-align:left;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        figure img{
+            border: 3px solid rgba(128, 128, 128, 0.5);
+            border-radius: 15px;
+            margin-bottom: 11px;
+            margin-top: 19px;
+            width: 180px;
+            height:250px;
+        }
+        figure table{
+            text-align:left;
+            font-size: 13px;
+        }
+        .font_light{
+            color: gray;
+            padding: 5px;
+            margin-left: 20px;
+            font-weight: lighter;
+        }
+        footer{
+            width: 100%;
+            height: 213px;
+            background-color: #F2F2F2;
+        }
+        footer .footer_wrap{
+            margin:0 auto;
+            width: 1172px;
+            height: 213px;
+            display: flex;
+            flex-direction: column;
+        }
+        footer .footer_h{
+            display: inline-flex;
+            justify-content: space-between;
+            line-height: 25.78px;
+        }
+        footer .footer_h .logo{
+            line-height: 60px;
+        }
+        footer .footer_h .logo img{
+            width: 22px;
+            height: 17.94px;
+            margin-top:30px;
+            margin-right: 30px;
+        }
+        footer .footer_wrap hr{
+            width: 1189px;
+        }
+        footer .footer_wrap h3{
+            display: none;
+        }
+        footer .footer_wrap .footer_info address{
+            display: inline-flex;
+
+        }
+        footer .footer_wrap .footer_info{
+            display: inline-flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="page_wrab">
+    <header>
+        <h1>정글 시네마 영화 목록</h1>
+    </header>
+    <hr class="hr1">
+    <nav>
+        <a href="#"><div class="nav_item">현재상영영화</div></a>
+        <a href="#"><div class="nav_item">개봉예정영화</div></a>
+        <a href="#"><div class="nav_item">박스오피스</div></a>
+    </nav>
+    <main>
+        <figure>
+            <img src="포스터_위니브월드.png" alt="위니브월드">
+            <figcaption>위니브 월드: 새로운 시대</figcaption>
+            <table>
+                <th>영화소개</th>
+                <tr>
+                    <td class="font_light">개요</td>
+                    <td>판타지</td>
+                    <td class="font_light">평점</td>
+                    <td>이미지</td>
+                    <td>9.05</td>
+                </tr>
+                <tr>
+                    <td class="font_light">개봉</td>
+                    <td colspan="4">2021.03.27</td>
+                </tr>
+                <tr>
+                    <td class="font_light">출연</td>
+                    <td colspan="4">라이캣,소울곰,개리씨</td>
+                </tr>
+            </table>
+            <input type="button" value="예매하기" name="예매하기">
+            <input type="button" value="예고편" name="예고편">
+        </figure>
+        <figure>
+            <img src="포스터_눈떠보니자바.png" alt="눈떠보니 코딩테스트">
+            <figcaption>눈떠보니 코딩테스트 전...</figcaption>
+            <table>
+                <th>영화소개</th>
+                <tr>
+                    <td class="font_light">개요</td>
+                    <td>스릴러</td>
+                    <td class="font_light">평점</td>
+                    <td>별 이미지</td>
+                    <td>8.25</td>
+                </tr>
+                <tr>
+                    <td class="font_light">개봉</td>
+                    <td colspan="4">2021.04.01</td>
+                </tr>
+                <tr>
+                    <td class="font_light">출연</td>
+                    <td colspan="4">자바독,개리씨,빙키</td>
+                </tr>
+            </table>
+             <input type="button" value="예매하기" name="예매하기">
+             <input type="button" value="예고편" name="예고편">
+        </figure>
+        <figure>
+            <img src="포스터_부트캠프.jpg" alt="파이썬 부트캠프">
+            <figcaption>파이썬 부트캠프</figcaption>
+            <table>
+                <th>영화소개</th>
+                <tr>
+                    <td class="font_light">개요</td>
+                    <td>드라마</td>
+                    <td class="font_light">평점</td>
+                    <td>이미지</td>
+                    <td>8.77</td>
+                </tr>
+                <tr>
+                    <td class="font_light">개봉</td>
+                    <td colspan="4">2021.04.12</td>
+                </tr>
+                <tr>
+                    <td class="font_light">출연</td>
+                    <td colspan="4">캣,파이,썬,뮤라</td>
+                </tr>
+            </table>
+             <input type="button" value="예매하기" name="예매하기">
+             <input type="button" value="예고편" name="예고편">
+        </figure>
+        <figure>
+            <img src="포스터_파이큐티.png" alt="파이큐티의 사랑">
+            <figcaption>파이큐티의 사랑</figcaption>
+            <table>
+                <th>영화소개</th>
+                <tr>
+                    <td class="font_light">개요</td>
+                    <td>로맨스</td>
+                    <td class="font_light">평점</td>
+                    <td>이미지</td>
+                    <td>8.81</td>
+                </tr>
+                <tr>
+                    <td class="font_light">개봉</td>
+                    <td colspan="4">2021.04.08</td>
+                </tr>
+                <tr>
+                    <td class="font_light">출연</td>
+                    <td colspan="4">파이썬,큐티</td>
+                </tr>
+            </table>
+             <input type="button" value="예매하기" name="예매하기">
+             <input type="button" value="예고편" name="예고편">
+        </figure>
+        <figure>
+            <img src="포스터_앤진액스.png" alt="NGINX의 춤">
+            <figcaption>NGINX의 춤</figcaption>
+            <table>
+                <th>영화소개</th>
+                <tr>
+                    <td class="font_light">개요</td>
+                    <td>드라마</td>
+                    <td class="font_light">평점</td>
+                    <td>이미지</td>
+                    <td>9.88</td>
+                </tr>
+                <tr>
+                    <td class="font_light">개봉</td>
+                    <td colspan="4">2021.04.15</td>
+                </tr>
+                <tr>
+                    <td class="font_light">출연</td>
+                    <td colspan="4">NGINX,노션</td>
+                </tr>
+            </table>
+             <input type="button" value="예매하기" name="예매하기">
+             <input type="button" value="예고편" name="예고편">
+        </figure>
+        <figure>
+            <img src="포스터_어쩌다밋업.png" alt="어쩌다 밋업">
+            <figcaption>어쩌다 밋업</figcaption>
+            <table>
+                <th>영화소개</th>
+                <tr>
+                    <td class="font_light">개요</td>
+                    <td>드라마</td>
+                    <td class="font_light">평점</td>
+                    <td>이미지</td>
+                    <td>9.25</td>
+                </tr>
+                <tr>
+                    <td class="font_light">개봉</td>
+                    <td colspan="4">2021.04.17</td>
+                </tr>
+                <tr>
+                    <td class="font_light">출연</td>
+                    <td colspan="4">라이캣,자바독,소울곰</td>
+                </tr>
+            </table>
+             <input type="button" value="예매하기" name="예매하기">
+             <input type="button" value="예고편" name="예고편">
+        </figure>
+        <figure>
+            <img src="포스터_파이게임.jpg" alt="파이게임 어드벤처">
+            <figcaption>파이게임 어드벤처</figcaption>
+            <table>
+                <th>영화소개</th>
+                <tr>
+                    <td class="font_light">개요</td>
+                    <td>판타지액션</td>
+                    <td class="font_light">평점</td>
+                    <td>이미지</td>
+                    <td>8.56</td>
+                </tr>
+                <tr>
+                    <td class="font_light">개봉</td>
+                    <td colspan="4">2021.03.27</td>
+                </tr>
+                <tr>
+                    <td class="font_light">출연</td>
+                    <td colspan="4">개리씨,파이썬</td>
+                </tr>
+            </table>
+             <input type="button" value="예매하기" name="예매하기">
+             <input type="button" value="예고편" name="예고편">
+        </figure>
+        <figure>
+            <img src="포스터_MBIT.png" alt="MBIT는 내 운명">
+            <figcaption>MBIT는 내 운명</figcaption>
+            <table>
+                <th>영화소개</th>
+                <tr>
+                    <td class="font_light">개요</td>
+                    <td>로맨스</td>
+                    <td class="font_light">평점</td>
+                    <td>이미지</td>
+                    <td>9.02</td>
+                </tr>
+                <tr>
+                    <td class="font_light">개봉</td>
+                    <td colspan="4">2021.04.12</td>
+                </tr>
+                <tr>
+                    <td class="font_light">출연</td>
+                    <td colspan="4">라이캣,개리씨,자바독</td>
+                </tr>
+            </table>
+             <input type="button" value="예매하기" name="예매하기">
+             <input type="button" value="예고편" name="예고편">
+        </figure>
+    </main>
+</div>
+<footer>
+    <div class="footer_wrap">
+        <section class="footer_h">
+            <h2>Jungle Cinema</h2>
+            <div class="logo">
+                <img src="twitter.png" alt="트위터"><img src="instagram.png" alt="인스타그램"><img src="facebook.png" alt="페이스북">
+                
+            </div>
+        </section>
+        <hr>
+        <section class="footer_info">
+            <h3>주소 및 연락처</h3>
+            <address>
+            <p><strong>(주)정글 시네마</strong></p>
+            <p><strong>대표</strong> 라이언</p>
+            <p><strong>사업자 번호</strong> 000-0000-0000</p>
+            <p>광고 영화 및 비디오물 제작업</p>
+            <p><strong>주소</strong>서울특별시</p>
+            </address>
+            <p>The Jungle</p>
+        </section>
+    </div>
+</footer>
+</body>
+</html>
