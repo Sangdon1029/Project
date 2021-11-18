@@ -1,0 +1,236 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@400;500&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap');
+
+/* util */
+
+.sr-only {
+    top:0;
+    text-indent:-9999px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: white; 
+    border-radius: 4px;
+    margin-right: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #d4d1f8; 
+  }
+/* //util */
+
+/* style */
+
+body {
+    font-family: Noto Sans KR;
+    box-sizing: border-box;
+    background-color: #EAE8FE;
+}
+.cont { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+}
+
+.logo{
+    height: 204px;
+    width: 436px;
+    background-image: url(/resource/img/logo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0 auto 67px;
+}
+
+.wrap1 {
+    height: 545px;
+    width: 360px;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 31px 27px 24px;
+}
+
+.wrap1__item-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.wrap1__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: Noto Sans KR;
+    font-size: 9px;
+    font-weight: 500;
+    overflow: hidden;
+    height: 130px;
+    width: 94px;
+    border-radius: 10px;
+    box-shadow: 0 0 1px 1px rgba(0,0,0,0.25);
+    
+}
+
+.wrap1__item:active {
+    border: 3px solid #6327FE;
+}
+.wrap1__item img {
+    height: 65px;
+    width: 36px;
+    
+}
+
+.wrap1__item strong {
+    height: 22px;
+    width: 70px;
+    left: 13px;
+    top: 99px;
+    border-radius: 50px;
+    background: #6327FE;
+    color: white;
+    line-height: 22px;
+}
+/* wrap1-mid */
+
+.balance-area, .dlrjf {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.balance {
+    display: flex;
+    justify-content: space-between;
+    height: 33px;
+    width: 200px;
+    background: #EAE8FE;
+    font-family: Noto Sans KR;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: left;
+    margin-right: 12px;
+    border-radius: 10px;
+    padding: 1px 5px;
+
+}
+.balance .원 {
+    margin-right: 10px;
+}
+.balance .잔액 {
+    margin-left: 10px;
+}
+.return_balance-btn, .deposit_btn {
+    height: 33px;
+    width: 94px;
+    border-radius: 4px;
+    box-shadow:  0px 0px 2px 1px rgba(0,0,0,0.25);
+    font-family: Noto Sans KR;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 19px;
+    text-align: center;
+}
+
+.deposit_input {
+    height: 33px;
+    width: 198px;
+    font-family: Noto Sans KR;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: left;
+    margin-right: 12px;
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+    padding: 1px 5px;
+    text-align: right;
+
+}
+
+.deposit_input::placeholder {
+    font-family: Noto Sans KR;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 19px;
+}
+/* wrap1 bottom */
+
+.wrap1__bottom {
+    margin-top: 11px;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.wrap1__bottom-left {
+    border: 1px solid #cccccc;
+    height: 134px;
+    width: 200px;
+    border-radius: 5px;
+    background: #EAE8FE;
+    padding: 5px;
+}
+
+.bottom-itemlist {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 46px;
+    width: 170px;
+    border-radius: 5px;
+    background-color: white;
+    margin: 7px;
+}
+.bottom-itemlist img {
+    height: 33px;
+    width: 18px;
+}
+
+.wrap1-get-btn {
+    font-family: Noto Sans KR;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 19px;
+    color: white;
+    height: 106px;
+    width: 94px;
+    border-radius: 5px;
+    background: #6327FE;
+    box-shadow:  0 0 1px 1px rgba(0,0,0,0.25);
+}
+
+.bottom-itemlist_desc {
+    height: 10px;
+    width: 73px;
+    font-size: 9px;
+    font-weight: 500;
+}
+
+.bottom-itemlist_amount {
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    text-align: center;
+    line-height: 28px;
+}
+
+.scroll_margin {
+    height: 129px;
+    width: 191px;
+    border-radius: 5px;
+    background: #EAE8FE;
+    padding: 5px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
